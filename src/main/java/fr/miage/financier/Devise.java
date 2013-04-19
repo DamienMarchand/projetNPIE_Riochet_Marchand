@@ -9,8 +9,8 @@ package fr.miage.financier;
  * @author E063762G
  */
 public class Devise {
-    String nomDevise;
-    String zoneEco;
+    private String nomDevise;
+    private String zoneEco;
 
     public void setNomDevise(String nomDevise) {
         this.nomDevise = nomDevise;

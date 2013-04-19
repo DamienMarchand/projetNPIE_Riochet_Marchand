@@ -56,7 +56,7 @@
                         <ruleset>rulesets/java/coupling.xml</ruleset>
                     </rulesets>
                 </configuration>
-                </plugin>
-            </plugins>
+            </plugin>
+        </plugins>
     </reporting>
 </project>
