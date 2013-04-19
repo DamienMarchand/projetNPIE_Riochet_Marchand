@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.miage.datatypes.ressources;
+package fr.miage.ressources;
 
 /**
  *

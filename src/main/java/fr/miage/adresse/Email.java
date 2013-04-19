@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.miage.datatypes.adresse;
+package fr.miage.adresse;
 
 /**
  *
@@ -11,4 +11,5 @@ package fr.miage.datatypes.adresse;
 public class Email {
     String adresse;
     String nomDomaine;
+    //TODO : faire un toString adresse+"@"+nomDomaine
 }

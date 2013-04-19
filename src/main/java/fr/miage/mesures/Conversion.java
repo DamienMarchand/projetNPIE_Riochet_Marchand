@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.miage.datatypes.mesures;
+package fr.miage.mesures;
 
 /**
  *
@@ -12,4 +12,5 @@ public class Conversion {
 
     Quantite quantite;
     Unite uniteArrivee;
+    
 }
