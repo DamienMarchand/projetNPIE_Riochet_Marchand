@@ -12,16 +12,16 @@ public class Devise {
     private String nomDevise;
     private String zoneEco;
 
+    public Devise(String nomDevise, String zoneEco) {
+        this.nomDevise = nomDevise;
+        this.zoneEco = zoneEco;
+    }
+    
     public void setNomDevise(String nomDevise) {
         this.nomDevise = nomDevise;
     }
 
     public void setZoneEco(String zoneEco) {
-        this.zoneEco = zoneEco;
-    }
-
-    public Devise(String nomDevise, String zoneEco) {
-        this.nomDevise = nomDevise;
         this.zoneEco = zoneEco;
     }
 
@@ -31,5 +31,5 @@ public class Devise {
 
     public String getZoneEco() {
         return zoneEco;
-    }    
+    }  
 }

@@ -4,15 +4,33 @@
  */
 package fr.miage.adresse;
 
-import java.util.List;
-
-/**
- *
- * @author E063762G
- */
 public class Ville {
     String nomVille;
     int codePostal;
-    List<Lieux> listeLieux;
     
+	public Ville(String nomVille, int codePostal) {
+		super();
+		this.nomVille = nomVille;
+		this.codePostal = codePostal;
+	}
+
+	public String getNomVille() {
+		return nomVille;
+	}
+
+	public void setNomVille(String nomVille) {
+		this.nomVille = nomVille;
+	}
+
+	public int getCodePostal() {
+		return codePostal;
+	}
+
+	public void setCodePostal(int codePostal) {
+		this.codePostal = codePostal;
+	}
+ 
+	public String afficherVilleComplete() {
+		return this.getCodePostal()+" "+this.getNomVille();
+	}
 }

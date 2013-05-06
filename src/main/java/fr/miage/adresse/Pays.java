@@ -4,14 +4,43 @@
  */
 package fr.miage.adresse;
 
-import java.util.List;
+import fr.miage.financier.Devise;
 
-/**
- *
- * @author E063762G
- */
 public class Pays {
 
     String nomPays;
-    List<Ville> listeVille;
+    String continent;
+    Devise monnaie;
+    
+	public Pays(String nomPays, String continent, Devise monnaie) {
+		super();
+		this.nomPays = nomPays;
+		this.continent = continent;
+		this.monnaie = monnaie;
+	}
+
+	public String getNomPays() {
+		return nomPays;
+	}
+
+	public void setNomPays(String nomPays) {
+		this.nomPays = nomPays;
+	}
+
+	public String getContinent() {
+		return continent;
+	}
+
+	public void setContinent(String continent) {
+		this.continent = continent;
+	}
+
+	public Devise getMonnaie() {
+		return monnaie;
+	}
+
+	public void setMonnaie(Devise monnaie) {
+		this.monnaie = monnaie;
+	}
+    
 }

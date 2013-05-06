@@ -4,41 +4,45 @@
  */
 package fr.miage.adresse;
 
-/**
- *
- * @author E063762G
- */
+import fr.miage.adresse.EnumAdresse.*;
+
+
 public class Telephone {
     
     int numero;
-    TypeNumero typeNumero;
-    Visibilite visibilite;
+    typeAdresse typeNumero;
+    typeVisibilite visibilite;
+    
+	public Telephone(int numero, typeAdresse typeNumero,
+			typeVisibilite visibilite) {
+		super();
+		this.numero = numero;
+		this.typeNumero = typeNumero;
+		this.visibilite = visibilite;
+	}
 
-    public enum TypeNumero {
+	public int getNumero() {
+		return numero;
+	}
 
-        fax("Fax"), domicile("Domicile"), portable("Portable"), travail("Travail");
-        private final String valeur;
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
 
-        private TypeNumero(String valeur) {
-            this.valeur = valeur;
-        }
+	public typeAdresse getTypeNumero() {
+		return typeNumero;
+	}
 
-        public String getValeur() {
-            return this.valeur;
-        }
-    }
+	public void setTypeNumero(typeAdresse typeNumero) {
+		this.typeNumero = typeNumero;
+	}
 
-    public enum Visibilite {
+	public typeVisibilite getVisibilite() {
+		return visibilite;
+	}
 
-        publique("Publique"), privee("Privee");
-        private final String valeur;
+	public void setVisibilite(typeVisibilite visibilite) {
+		this.visibilite = visibilite;
+	}
 
-        private Visibilite(String valeur) {
-            this.valeur = valeur;
-        }
-
-        public String getValeur() {
-            return this.valeur;
-        }
-    }
-}
+  }

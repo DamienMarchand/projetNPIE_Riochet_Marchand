@@ -4,27 +4,42 @@
  */
 package fr.miage.adresse;
 
-/**
- *
- * @author E063762G
- */
+import fr.miage.adresse.EnumAdresse.typeLieux;
+
 public class Lieux {
 
     int numero;
-    TypeLieux typeLieux;
-    String nomLieux;
+    typeLieux type;
+    String nom;
+    
+    public Lieux(int numero, typeLieux type, String nom) {
+		super();
+		this.numero = numero;
+		this.type = type;
+		this.nom = nom;
+	}
+    
+	public int getNumero() {
+		return numero;
+	}
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public typeLieux getType() {
+		return type;
+	}
+	public void setType(typeLieux type) {
+		this.type = type;
+	}
+	public String getNom() {
+		return nom;
+	}
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
 
-    public enum TypeLieux {
-
-        rue("Rue"), boulevard("Boulevard"), avenue("Avenue"), impasse("Impasse"), lieuxDits("Lieux-dits"), chemin("Chemin");
-        private final String valeur;
-
-        private TypeLieux(String valeur) {
-            this.valeur = valeur;
-        }
-
-        public String getValeur() {
-            return this.valeur;
-        }
-    }
+	public String afficherLieuxComplet() {
+		return this.getNumero()+" "+this.getType()+" "+this.getNom();
+	}
+   
 }

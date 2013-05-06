@@ -11,15 +11,14 @@ import java.util.List;
  * @author E063762G
  */
 public class Convertisseur {
-    List<TauxConversion> listeTaux;
-    
+    private List<TauxConversion> listeTaux;
     
     public void actualiserTaux(Devise d){
         
     }
     
-    public void ajoutTaux(Devise depart,Devise arrivee){
-        
+    public void ajoutTaux(TauxConversion t){
+        listeTaux.add(t);
     }
     
     public void actualisationTotale(){
