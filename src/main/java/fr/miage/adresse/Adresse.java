@@ -15,17 +15,17 @@ public class Adresse {
 	private Lieux lieux;
 	private Ville ville;
 	private Pays pays;
-	private List<Telephone> list_tel;
-	private List<Email> list_mail;
+	private List<Telephone> listTel;
+	private List<Email> listMail;
 	
 	public Adresse(Lieux lieux, Ville ville, Pays pays,
-			List<Telephone> list_tel, List<Email> list_mail) {
+			List<Telephone> listTel, List<Email> listMail) {
 		super();
 		this.lieux = lieux;
 		this.ville = ville;
 		this.pays = pays;
-		this.list_tel = list_tel;
-		this.list_mail = list_mail;
+		this.listTel = listTel;
+		this.listMail = listMail;
 	}
 
 	public Lieux getLieux() {
@@ -52,28 +52,28 @@ public class Adresse {
 		this.pays = pays;
 	}
 
-	public List<Telephone> getList_tel() {
-		return list_tel;
+	public List<Telephone> getListTel() {
+		return listTel;
 	}
 
-	public void setList_tel(List<Telephone> list_tel) {
-		this.list_tel = list_tel;
+	public void setListTel(List<Telephone> listTel) {
+		this.listTel = listTel;
 	}
 
-	public List<Email> getList_mail() {
-		return list_mail;
+	public List<Email> getListMail() {
+		return listMail;
 	}
 
-	public void setList_mail(List<Email> list_mail) {
-		this.list_mail = list_mail;
+	public void setListMail(List<Email> listMail) {
+		this.listMail = listMail;
 	}
 	
 	public void ajoutEmail(Email newEmail) {
-		this.list_mail.add(newEmail);
+		this.listMail.add(newEmail);
 	}
 	
 	public void ajoutTel(Telephone newTel) {
-		this.list_tel.add(newTel);
+		this.listTel.add(newTel);
 	}
 	
 	public String afficherAdresseComplete() {
@@ -82,16 +82,16 @@ public class Adresse {
 	
 	public String afficherMails() {
 		String temp = "";
-		for(Email e: list_mail) {
-			temp += e.afficherAdresseMailComplete()+"|";
+		for(Email email: listMail) {
+			temp += email.afficherAdresseMailComplete()+"|";
 		}
 		return temp;
 	}
 	
 	public String afficherTels() {
 		String temp = "";
-		for(Telephone t: list_tel) {
-			temp += t.getNumero()+"|";
+		for(Telephone tel: listTel) {
+			temp += tel.getNumero()+"|";
 		}
 		return temp;
 	}

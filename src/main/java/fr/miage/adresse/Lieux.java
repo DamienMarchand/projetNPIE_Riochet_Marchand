@@ -8,9 +8,9 @@ import fr.miage.adresse.EnumAdresse.typeLieux;
 
 public class Lieux {
 
-    int numero;
-    typeLieux type;
-    String nom;
+    private int numero;
+    private typeLieux type;
+    private String nom;
     
     public Lieux(int numero, typeLieux type, String nom) {
 		super();

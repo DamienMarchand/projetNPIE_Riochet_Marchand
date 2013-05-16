@@ -13,12 +13,12 @@ import java.util.List;
 public class Convertisseur {
     private List<TauxConversion> listeTaux;
     
-    public void actualiserTaux(Devise d){
+    public void actualiserTaux(Devise devise){
         
     }
     
-    public void ajoutTaux(TauxConversion t){
-        listeTaux.add(t);
+    public void ajoutTaux(TauxConversion taux){
+        listeTaux.add(taux);
     }
     
     public void actualisationTotale(){

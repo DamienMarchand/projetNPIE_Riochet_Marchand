@@ -9,9 +9,9 @@ import fr.miage.adresse.EnumAdresse.*;
 
 public class Telephone {
     
-    int numero;
-    typeAdresse typeNumero;
-    typeVisibilite visibilite;
+    private int numero;
+    private typeAdresse typeNumero;
+    private typeVisibilite visibilite;
     
 	public Telephone(int numero, typeAdresse typeNumero,
 			typeVisibilite visibilite) {

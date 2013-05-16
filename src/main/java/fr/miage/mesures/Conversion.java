@@ -25,9 +25,13 @@ public class Conversion {
 	}
 
 	public int convertir(){
-		return base.getBase().get(uniteDepart).get(uniteArrivee).getValeur()*quantite.getValeur();
+		return getValeurQuantite(base.getQuantite(uniteDepart,uniteArrivee))*getValeurQuantite(quantite);
 	}
     
+        public int getValeurQuantite(Quantite quantite){
+            return quantite.getValeur();
+        }
+        
 	public Quantite getQuantite() {
 		return quantite;
 	}

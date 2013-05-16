@@ -6,11 +6,11 @@ package fr.miage.adresse;
 
 import fr.miage.financier.Devise;
 
-public class Pays {
+public class Pays { //NOPMD
 
-    String nomPays;
-    String continent;
-    Devise monnaie;
+    private String nomPays;
+    private String continent;
+    private Devise monnaie;
     
 	public Pays(String nomPays, String continent, Devise monnaie) {
 		super();

@@ -20,9 +20,9 @@ public class Email {
 		this.type = type;
 	}
     
-	String adresse;
-    typeNomDomaine nomDomaine;
-    typeAdresse type;
+private String adresse;
+    private typeNomDomaine nomDomaine;
+    private typeAdresse type;
     
 	public String getAdresse() {
 		return adresse;
