@@ -6,43 +6,41 @@ package fr.miage.adresse;
 
 import fr.miage.adresse.EnumAdresse.*;
 
-
 public class Telephone {
-    
+
     private int numero;
     private typeAdresse typeNumero;
     private typeVisibilite visibilite;
-    
-	public Telephone(int numero, typeAdresse typeNumero,
-			typeVisibilite visibilite) {
-		super();
-		this.numero = numero;
-		this.typeNumero = typeNumero;
-		this.visibilite = visibilite;
-	}
 
-	public int getNumero() {
-		return numero;
-	}
+    public Telephone(int numero, typeAdresse typeNumero,
+            typeVisibilite visibilite) {
+        super();
+        this.numero = numero;
+        this.typeNumero = typeNumero;
+        this.visibilite = visibilite;
+    }
 
-	public void setNumero(int numero) {
-		this.numero = numero;
-	}
+    public int getNumero() {
+        return numero;
+    }
 
-	public typeAdresse getTypeNumero() {
-		return typeNumero;
-	}
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
 
-	public void setTypeNumero(typeAdresse typeNumero) {
-		this.typeNumero = typeNumero;
-	}
+    public typeAdresse getTypeNumero() {
+        return typeNumero;
+    }
 
-	public typeVisibilite getVisibilite() {
-		return visibilite;
-	}
+    public void setTypeNumero(typeAdresse typeNumero) {
+        this.typeNumero = typeNumero;
+    }
 
-	public void setVisibilite(typeVisibilite visibilite) {
-		this.visibilite = visibilite;
-	}
+    public typeVisibilite getVisibilite() {
+        return visibilite;
+    }
 
-  }
+    public void setVisibilite(typeVisibilite visibilite) {
+        this.visibilite = visibilite;
+    }
+}

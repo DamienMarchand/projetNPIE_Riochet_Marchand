@@ -9,6 +9,7 @@ package fr.miage.financier;
  * @author E063762G
  */
 public class Devise {
+
     private String nomDevise;
     private String zoneEco;
 
@@ -16,7 +17,7 @@ public class Devise {
         this.nomDevise = nomDevise;
         this.zoneEco = zoneEco;
     }
-    
+
     public void setNomDevise(String nomDevise) {
         this.nomDevise = nomDevise;
     }
@@ -31,5 +32,5 @@ public class Devise {
 
     public String getZoneEco() {
         return zoneEco;
-    }  
+    }
 }

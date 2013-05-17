@@ -9,20 +9,19 @@ package fr.miage.mesures;
  * @author E063762G
  */
 public class Quantite {
+
     private int valeur;
 
-	public Quantite(int valeur) {
-		super();
-		this.valeur = valeur;
-	}
+    public Quantite(int valeur) {
+        super();
+        this.valeur = valeur;
+    }
 
-	public int getValeur() {
-		return valeur;
-	}
+    public int getValeur() {
+        return valeur;
+    }
 
-	public void setValeur(int valeur) {
-		this.valeur = valeur;
-	}
-    
-    
+    public void setValeur(int valeur) {
+        this.valeur = valeur;
+    }
 }

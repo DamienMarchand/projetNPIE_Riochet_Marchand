@@ -11,36 +11,35 @@ public class Pays { //NOPMD
     private String nomPays;
     private String continent;
     private Devise monnaie;
-    
-	public Pays(String nomPays, String continent, Devise monnaie) {
-		super();
-		this.nomPays = nomPays;
-		this.continent = continent;
-		this.monnaie = monnaie;
-	}
 
-	public String getNomPays() {
-		return nomPays;
-	}
+    public Pays(String nomPays, String continent, Devise monnaie) {
+        super();
+        this.nomPays = nomPays;
+        this.continent = continent;
+        this.monnaie = monnaie;
+    }
 
-	public void setNomPays(String nomPays) {
-		this.nomPays = nomPays;
-	}
+    public String getNomPays() {
+        return nomPays;
+    }
 
-	public String getContinent() {
-		return continent;
-	}
+    public void setNomPays(String nomPays) {
+        this.nomPays = nomPays;
+    }
 
-	public void setContinent(String continent) {
-		this.continent = continent;
-	}
+    public String getContinent() {
+        return continent;
+    }
 
-	public Devise getMonnaie() {
-		return monnaie;
-	}
+    public void setContinent(String continent) {
+        this.continent = continent;
+    }
 
-	public void setMonnaie(Devise monnaie) {
-		this.monnaie = monnaie;
-	}
-    
+    public Devise getMonnaie() {
+        return monnaie;
+    }
+
+    public void setMonnaie(Devise monnaie) {
+        this.monnaie = monnaie;
+    }
 }

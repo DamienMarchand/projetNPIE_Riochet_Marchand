@@ -4,6 +4,7 @@
  */
 package fr.miage.financier;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,17 +12,28 @@ import java.util.List;
  * @author E063762G
  */
 public class Convertisseur {
+
     private List<TauxConversion> listeTaux;
-    
-    public void actualiserTaux(Devise devise){
-        
+
+    public Convertisseur() {
+        listeTaux = new ArrayList<TauxConversion>();
     }
-    
-    public void ajoutTaux(TauxConversion taux){
+
+    public List<TauxConversion> getListeTaux() {
+        return listeTaux;
+    }
+
+    public void actualiserTaux(Devise devise) {
+    }
+
+    public void ajoutTaux(TauxConversion taux) {
         listeTaux.add(taux);
     }
-    
-    public void actualisationTotale(){
+
+    public void actualisationTotale() {
         //foreach de actualiserTaux
+        for (TauxConversion taux : listeTaux) {
+            actualiserTaux(taux.getDeviseDepart());
+        }
     }
 }

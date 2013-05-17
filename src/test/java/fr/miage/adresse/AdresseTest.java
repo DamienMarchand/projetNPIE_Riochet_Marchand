@@ -5,6 +5,7 @@
 package fr.miage.adresse;
 
 import fr.miage.adresse.EnumAdresse.typeAdresse;
+import fr.miage.adresse.EnumAdresse.typeLieux;
 import fr.miage.adresse.EnumAdresse.typeNomDomaine;
 import fr.miage.adresse.EnumAdresse.typeVisibilite;
 import fr.miage.financier.Devise;
@@ -57,16 +58,28 @@ public class AdresseTest extends TestCase {
         String adresseComplete = adresse.afficherAdresseComplete();
         assertNotNull(adresseComplete);
     }
-    
+
     public void testAfficherMails() {
         String mails = adresse.afficherMails();
         assertNotNull(mails);
-        assertEquals("", mails);        
+        assertEquals("", mails);
     }
-    
+
     public void testAfficherTels() {
         String tels = adresse.afficherTels();
         assertNotNull(tels);
         assertEquals("", tels);
+    }
+    
+    public void testSetLieux(){
+        Lieux l = new Lieux(5, typeLieux.Rue, "de la gare");
+        adresse.setLieux(l);
+        assertEquals(adresse.getLieux(), l);
+    }
+
+    public void testSetPays(){
+        Pays p = new Pays("France", "Europe", new Devise("Euro","europe"));
+        adresse.setPays(p);
+        assertEquals(adresse.getPays(), p);
     }
 }

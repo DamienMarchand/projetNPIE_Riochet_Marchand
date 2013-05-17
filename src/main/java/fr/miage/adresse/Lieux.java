@@ -11,35 +11,39 @@ public class Lieux {
     private int numero;
     private typeLieux type;
     private String nom;
-    
-    public Lieux(int numero, typeLieux type, String nom) {
-		super();
-		this.numero = numero;
-		this.type = type;
-		this.nom = nom;
-	}
-    
-	public int getNumero() {
-		return numero;
-	}
-	public void setNumero(int numero) {
-		this.numero = numero;
-	}
-	public typeLieux getType() {
-		return type;
-	}
-	public void setType(typeLieux type) {
-		this.type = type;
-	}
-	public String getNom() {
-		return nom;
-	}
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
 
-	public String afficherLieuxComplet() {
-		return this.getNumero()+" "+this.getType()+" "+this.getNom();
-	}
-   
+    public Lieux(int numero, typeLieux type, String nom) {
+        super();
+        this.numero = numero;
+        this.type = type;
+        this.nom = nom;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public typeLieux getType() {
+        return type;
+    }
+
+    public void setType(typeLieux type) {
+        this.type = type;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String afficherLieuxComplet() {
+        return this.getNumero() + " " + this.getType() + " " + this.getNom();
+    }
 }
